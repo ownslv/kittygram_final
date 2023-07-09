@@ -20,7 +20,7 @@ services:
       - static:/app/collected_static/
       - media:/app/media
   frontend:
-    image: vzangiev/kittygram_fronted
+    image: vzangiev/kittygram_frontend
     command: cp -r /app/build/. /static/
     volumes:
       - static:/static
