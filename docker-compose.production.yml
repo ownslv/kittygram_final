@@ -25,6 +25,7 @@ services:
     volumes:
       - static:/static
   gateway:
+    # image: nginx:1.22.1
     image: vzangiev/kittygram_gateway
     env_file: .env
     ports:
